@@ -1,0 +1,75 @@
+<div class="w-full h-screen" data-controller="analyzer">
+  <div class="flex space-x-4">
+    <div class="bg-red-400 w-1/2 h-24" data-analyzer-target="left">
+    </div>
+
+    <div class="bg-green-400 w-1/2 h-24" data-analyzer-target="right">
+    </div>
+  </div>
+
+  <div class="w-fit mx-auto mt-12">
+    <button class="border border-black rounded-md shadow-lg p-2" data-action="click->analyzer#randomize" data-analyzer-target="analyzer">
+      ANALYZE
+    </button>
+  </div>
+
+  <div class="mt-12">
+    <div class="w-fit mx-auto border border-black rounded-lg p-4 space-y-4">
+      <div class="flex space-x-6">
+        <div class="flex space-x-1 my-auto">
+          <div class="w-8 h-4 bg-red-400 border border-black"></div>
+          <div class="w-8 h-4 bg-red-400 border border-black"></div>
+        </div>
+
+        <div>
+          Take investment you are analyzing.
+        </div>
+      </div>
+
+      <div class="flex space-x-6">
+        <div class="flex space-x-1 my-auto">
+          <div class="w-8 h-4 bg-green-400 border border-black"></div>
+          <div class="w-8 h-4 bg-green-400 border border-black"></div>
+        </div>
+
+        <div>
+          Opponent takes 2 profit cards from board.
+        </div>
+      </div>
+
+      <div class="flex space-x-6">
+        <div class="flex space-x-1 my-auto">
+          <div class="w-8 h-4 bg-green-400 border border-black"></div>
+          <div class="w-8 h-4 bg-red-400 border border-black"></div>
+        </div>
+
+        <div>
+          <div>
+            1. Opponent takes 1 profit card from board.
+          </div>
+
+          <div>
+            2. Take 1 profit card from opponent's hand.
+          </div>
+        </div>
+      </div>
+
+      <div class="flex space-x-6">
+        <div class="flex space-x-1 my-auto">
+          <div class="w-8 h-4 bg-red-400 border border-black"></div>
+          <div class="w-8 h-4 bg-green-400 border border-black"></div>
+        </div>
+
+        <div>
+          <div>
+            1. Take 1 profit card from opponent's hand.
+          </div>
+
+          <div>
+            2. Opponent takes 1 profit card from board.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
